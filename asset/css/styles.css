@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+:root {
+  --light-purple: #f2b3f1;
+  --dark-purple: #874186;
+  --light-yellow: #fcfcb6;
+  --white: #fff;
+  --darkish-purple: #300a45;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--soft-gray);
+  color: var(--deep-navy);
+}
+
+.navbar {
+  background: linear-gradient(135deg, var(--light-purple), var(--dark-purple)) !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: var(--light-yellow) !important;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--white) !important;
+  transform: translateY(-2px);
+}
+
+#register {
+  background-color: var(--light-yellow);
+  color: var(--dark-purple) !important;
+  font-weight: 900;
+  border: 3px solid var(--light-yellow);
+  min-width: 200px;
+  text-align: center;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+#register:hover {
+  background-color: var(--dark-purple);
+  color: var(--white) !important;
+}
+
+.hero {
+  margin-top: 30px;
+  background: linear-gradient(135deg, var(--white), var(--light-yellow));
+  position: relative;
+  overflow: hidden;
+  font-size: 1.25rem;
+}
+
+.hero img {
+  min-width: (300px, 50%);
+  object-fit: cover;
+}
+
+#hero h2 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--dark-purple);
+}
+
+#about {
+  background: var(--dark-purple);
+  color: var(--light-yellow);
+}
+#about h2 {
+  font-size: 3rem;
+}
+
+.about .card, .venue .card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.about .card:hover, .venue .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.card-body {
+  background-color: var(--light-yellow);
+  color: var(--dark-purple) !important;
+  margin: 10px;
+}
+.card-body p {
+  font-weight: 600;
+}
+
+#speakers {
+  background-color: var(--darkish-purple);
+  color: var(--light-yellow);
+  font-size: 1.25rem;
+}
+#speakers h2 {
+  font-size: 3rem;
+}
+
+.speakers img {
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.speakers img:hover {
+  transform: scale(1.05);
+}
+
+#venue {
+  background-color: var(--light-yellow);
+  color: var(--darkish-purple) !important;
+  font-size: 1.25rem;
+}
+
+#venue h2 {
+  font-size: 3rem;
+}
+
+#schedule {
+  background-color: var(--light-purple);
+  color: var(--darkish-purple);
+  font-size: 1.25rem;
+}
+
+#schedule h2 {
+  font-size: 3rem;
+}
+
+#registration {
+  background-color: var(--light-yellow);
+  font-size: 1.25rem;
+}
+#registration h2 {
+  font-size: 3rem;
+  color: var(--light-purple);
+}
+
+.registration .card {
+  border-radius: 15px;
+  box-shadow: 0 15px 100px rgba(0,0,0,0.1);
+  background-color: var(--darkish-purple);
+}
+
+.registration label {
+  color: var(--light-purple);
+}
+
+#registration .card input {
+  color: var(--darkish-yellow);
+  background-color: var(--light-purple);
+  border: none;
+}
+
+
+#registration button {
+  border: 2px solid var(--light-purple);
+  background-color: var(--darkish-purple);
+  color: var(--light-purple);
+  border-radius: 10px 20px;
+  font-weight: 900;
+  transition: all 0.6s;
+}
+
+#registration button:hover {
+  background-color: var(--light-purple);
+  color: var(--darkish-purple);
+  border-radius: 20px 10px;
+  border-color:  var(--light-purple);
+}
+
+footer {
+  color: var(--light-yellow);
+}
+
+footer h5 {
+  font-size: 2rem;
+}
+
+footer a {
+  color: var(--light-yellow) !important;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+
