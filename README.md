@@ -1,3 +1,3 @@
 # conference_webpage
 
-Sample Conference Webpage
+Simple Conference Webpage using HTML, CSS (Bootstrap and Custom CSS)
