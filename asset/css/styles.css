@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-  --light-purple: #f2b3f1;
+  /*Primary Color with different shades*/
+  --light-purple: #f2b3f1; 
   --dark-purple: #874186;
+  --darkish-purple: #300a45;
+  /*Secondary Color - more on light colors*/
   --light-yellow: #fcfcb6;
   --white: #fff;
-  --darkish-purple: #300a45;
 }
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif !important;
+
 }
 body {
-  font-family: Roboto, sans-serif;
-  background-color: var(--soft-gray);
-  color: var(--deep-navy);
+  background-color: var(--white);  /*Default backgroundColor*/
 }
 
 .navbar {
-  background: linear-gradient(135deg, var(--light-purple), var(--dark-purple)) !important;
+  background: linear-gradient(135deg, var(--light-purple), var(--dark-purple), var(--darkish-purple)) !important;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
@@ -31,7 +32,7 @@ body {
 }
 
 .nav-link {
-  color: var(--light-yellow) !important;
+  color: var(--light-yellow);
   font-weight: 700;
   transition: color 0.3s ease;
 }
@@ -40,10 +41,12 @@ body {
   color: var(--white) !important;
   transform: translateY(-2px);
 }
+.nav-link:active {
+  background-color: var(--darkish-purple);
+}
 
 #register {
-  background-color: var(--light-yellow);
-  color: var(--dark-purple) !important;
+  background-color: var(--darkish-purple);
   font-weight: 900;
   border: 3px solid var(--light-yellow);
   min-width: 200px;
@@ -69,7 +72,7 @@ body {
   object-fit: cover;
 }
 
-#hero h2 {
+#hero h1 {
   font-size: 3rem;
   font-weight: 800;
   color: var(--dark-purple);
@@ -113,6 +116,11 @@ body {
   font-size: 3rem;
 }
 
+#speakers .title {
+  font-style: italic;
+  color: var(--white);
+}
+
 .speakers img {
   border-radius: 50%;
   object-fit: cover;
@@ -131,6 +139,15 @@ body {
 
 #venue h2 {
   font-size: 3rem;
+}
+
+#venue .venue-pic {
+  height: 250px;
+}
+#venue img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 
 #schedule {
