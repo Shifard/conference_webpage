@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The AI Conference</title>
     <link rel="stylesheet" href="asset/css/styles.css">
     <link rel="stylesheet" href="asset/css/reset.css">
@@ -11,11 +11,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
     <!--Header-->
     <header>
       <!--Navigation-->
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow">
+      <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark shadow">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="asset/images/AI_Conference.png" alt="AI conference logo" width="150"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
                 <img src="asset/images/AI_pic.png" width="400" alt="AI Picture" class="img-fluid pt-3">
             </div>
             <div class="col-md-8">
-                <h2>Balancing AI Innovation and Duty</h2>
+                <h1>Balancing AI Innovation and Duty</h1>
                 <p class="brief">Discover how AI is changing the world through novel discoveries and trends. Learn how AI is changing the world and why fairness and safety matter.</p>
                 <p><strong>Date: </strong>May 12, 2025</p>
                 <p><strong>Time: </strong>1:00 PM ET</p>
@@ -105,7 +105,7 @@
           <div class="row align-items-center mb-5">
               <div class="col-md-6">
                   <h3>Geoffrey Hinton</h3>
-                  <p>Godfather of AI</p>
+                  <p class="title">Godfather of AI</p>
                   <p>Geoffrey Hinton is a key figure in artificial intelligence, known for his work on neural networks and deep learning. He helped develop backpropagation, a method that allows AI to learn, leading to major advances in speech recognition and computer vision. He won the Turing Award in 2018 for his contributions to deep learning.</p>
                   <div>
                       <a href="#" class="text-dark me-3"><i class="fab fa-twitter fa-lg"></i></a>
@@ -120,8 +120,8 @@
           <div class="row align-items-center mb-5 flex-md-row-reverse">
               <div class="col-md-6">
                   <h3>Timnit Gebru</h3>
-                  <p>Founder and Executive Director of Distributed AI Research Institute (DAIR)</p>
-                  <p>Timnit Gebru is a researcher focused on AI ethics and bias. She co-led Google’s Ethical AI team but left in 2020 after raising concerns about AI harms. Now, she leads the DAIR Institute, promoting fair and responsible AI.</p>
+                  <p class="title">Founder and Executive Director of Distributed AI Research Institute (DAIR)</p>
+                  <p>Timnit Gebru is a researcher focused on AI ethics and bias. She co-led Google's Ethical AI team but left in 2020 after raising concerns about AI harms. Now, she leads the DAIR Institute, promoting fair and responsible AI.</p>
               </div>
               <div class="col-md-6 text-center">
                   <img src="asset/images/Gebru, T..webp" class="img-fluid rounded shadow" alt="Timnit Gebru picture">
@@ -141,11 +141,11 @@
       </div>
       <div class="container">
           <div class="row g-4 justify-content-center">
-              <div class="col-md-5">
+              <div class="venue-pic col-md-5">
                   <img src="asset/images/Convention_Center_Interior.jpeg" class="img-fluid rounded shadow" alt="Santa Clara Convention Center Interior">
                   <p class="text-center mt-2"><small>Interior View</small></p>
               </div>
-              <div class="col-md-5">
+              <div class="venue-pic col-md-5">
                   <img src="asset/images/Convention_Center_Exterior.jpg" class="img-fluid rounded shadow"  alt="Santa Clara Convention Center Exterior">
                   <p class="text-center mt-2"><small>Exterior View</small></p>
               </div>
@@ -154,7 +154,7 @@
       </section>
       <!--Schedule section-->
       <section id="schedule" class="schedule section p-5">
-        <div class="container my-5">
+        <div class="container-fluid my-5">
           <div class="text-center mb-4">
               <h2>Event Schedule</h2>
               <h4>Balancing AI Innovation and Duty</h4>
